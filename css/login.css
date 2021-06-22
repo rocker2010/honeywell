@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body {
+	margin: 0px;
+	/*overflow: hidden;*/
+	font-family: arial;
+	background-color: #373d41;
+}
+
+#canvas {
+	width: 100%;
+	height: 508px;
+	/*background: url(images/back.jpg) repeat-x ;*/
+	background: #010c20;
+}
+
+.inner2 {
+	width: 990px;
+	height: 508px;
+	overflow: hidden;
+	/*background: url(images/20170605.jpg) no-repeat -35px 0;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+.login {
+	background: url(images/login2.png) no-repeat top center;
+	overflow: hidden;
+	position: absolute;
+	border-radius: 10px;
+	top: 50%;
+	margin-top: -160px;
+	right: 5px;
+	height: 306px;
+	width: 410px;
+}
+
+.login img {
+	height: 32px;
+	vertical-align: middle;
+	border: none;
+	margin-top: -1px;
+	width: 84px;
+}
+
+.canvas-wrap {
+	position: relative;
+}
+
+header {
+    padding: 15px 0;
+    background: #1f2326;
+    border-bottom: 1px #4a4a4a solid;
+}
+
+header h1.logo {
+	background: url(images/InsideHon-Logo@3x.png) no-repeat left center;
+	height: 51px;
+	background-size: 185px;;
+}
+
+footer {
+	font-size: 13px;
+	padding: 25px 0;
+	overflow: hidden;
+}
+
+.item {
+	float: left;
+	padding-right: 10px;
+	border-right: 1px #dcdcdc solid;
+	margin-right: 10px;
+	color: #757575;
+}
+
+.item:last-child {
+	border-right: none;
+}
+
+.copy {
+	background: #000;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 12px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.copy a {
+	color: #fff;
+}
+
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main {
+	/*margin-top: 10px;*/
+}
+
+.tab {
+	font-size: 16px;
+	color: #999;
+	position: absolute;
+	top: 90px;
+	left: 57px;
+}
+
+.tab td {
+	padding: 8px;
+}
+
+.tab td input {
+	padding: 7px;
+	border: 1px #ccc solid;
+	width: 186px;
+}
+
+.tab td input {
+	padding: 7px;
+	border: 1px #ccc solid;
+}
+
+.tab td p {
+	color: orangered;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.wby2 {
+	width: 100px!important;
+	margin-right: -3px;
+}
+
+.btn {
+	background: #2FB3A6;
+	width: 200px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	box-shadow: 2px 2px 2px #ccc;
+	border: 1px #2f988e solid;
+	cursor: pointer;
+    text-decoration: none;
+}
+.login-2017-body-txt-box h1 {
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin-bottom: 19px;
+    font-weight: bold;
+}
+.login-2017-body-txt-box {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    text-align: left;
+    top: 160px;
+}
+.login-2017-body-txt-box li {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.47px;
+    line-height: 30px;
+}

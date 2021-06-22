@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Column menu</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<link rel="stylesheet" type="text/css" href="css/_all-skins.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.smooth-scroll.js"></script>
+		<!--<script src="js/jquery.ba-bbq.js"></script>-->
+		<!--<script src="js/jquery.ba-bbq.min.js"></script>-->
+		<script src="js/kendo.web.min.js"></script>
+		<!--kendo data-->
+		<script src="js/orders.js"></script>
+		<!--end data-->
+	</head>
+
+	<body>
+		<div class="hone-console-base-bar">
+			<div class="hone-base-container">
+				<div class="topbar">
+					<div class="hone-logo pull-left logo-box">
+						<div class="hone-logo-wrapper pull-left">
+							<a href="main.html" target="_blank" class="hone-icon pull-left">
+								<img src="img/InsideHon-Logo@3x.png" /></a>
+						</div>
+					</div>
+					<div class="pull-right topbar-info clearfix">
+						<div class="pull-left topbar-notice topbar-info-item message-box">
+							<a class="topbar-btn topbar-info-dropdown-toggle" href="#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="消息"><span class="topbar-btn-notice-title"><i class="fa fa-envelope-o"></i><span class="topbar-btn-notice-num">1</span></span>
+							</a>
+						</div>
+						<div class="pull-left topbar-info-item expense-box">
+							<a href="#" target="_blank" class="topbar-btn topbar-info-dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="费用"><span><i class="fa fa-flag-o"></i></span></a>
+						</div>
+						<div class="pull-left topbar-info-item workorder-box">
+							<a href="#" target="_blank" class="topbar-btn topbar-info-dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="工单"><span><i class="fa fa-bar-chart"></i></span></a>
+						</div>
+						<div class="pull-left topbar-info-item icp-box">
+							<a href="#" target="_blank" class="topbar-btn topbar-info-dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="备案"><span><i class="fa fa-paper-plane-o"></i></span></a>
+						</div>
+						<div class="pull-left topbar-info-item enterprise-box">
+							<a href="#" target="_blank" class="topbar-btn topbar-info-dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="企业"><span><i class="fa fa-sitemap"></i></span></a>
+						</div>
+						<div class="pull-left topbar-info-item support-box ">
+							<a href="#" target="_blank" class="topbar-btn topbar-info-dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="支持与服务"><span><i class="fa fa-calendar-o"></i></span></a>
+						</div>
+						<div class="pull-left topbar-info-item topbar-info-dropdown user-box">
+							<a href="#" target="_blank" class="topbar-info-dropdown-toggle topbar-btn" rel="noopener noreferrer"><img class="topbar-user-avatar" src="img/user2-160x160.jpg"></a>
+							<div class="topbar-info-dropdown-memu topbar-info-dropdown-memu-list">
+								<div class="topbar-user-header">
+									<h3><img class="topbar-user-avatar" src="img/user2-160x160.jpg"><span title="yangb*****@163.com" class="topbar-user-email">yangb*****@163.com</span></h3>
+									<ul class="topbar-user-entrance-list">
+										<li class="topbar-user-entrance">
+											<a href="#" title="基本资料" target="_target">基本资料</a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" title="实名认证" target="_target">实名认证</a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" title="安全设置" target="_target">安全设置</a>
+										</li>
+									</ul>
+								</div>
+								<div class="topbar-user-body">
+									<ul class="topbar-user-entrance-list">
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-cogs "></i></span><span class="topbar-user-entrance-name">安全管控</span></a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-calendar-minus-o"></i></span><span class="topbar-user-entrance-name">访问控制</span></a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-file-audio-o"></i></span><span class="topbar-user-entrance-name">accesskeys</span></a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-line-chart"></i></span><span class="topbar-user-entrance-name">会员权益</span></a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-image"></i></span><span class="topbar-user-entrance-name">会员积分</span></a>
+										</li>
+										<li class="topbar-user-entrance">
+											<a href="#" target="_target" rel="noopener noreferrer"><span class="topbar-user-entrance-logo-box"><i class="topbar-user-entrance-logo fa fa-mortar-board"></i></span><span class="topbar-user-entrance-name">云大使管理</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="topbar-user-footer">
+									<a href="login.html" target="_self" rel="noopener noreferrer">退出管理控制台</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar sidebar-mini">
+					<!--<div class="sidebar  sidebar-mini showProductList">-->
+					<div class="hone-sidebar-wrapper">
+						<div class="product-all">
+							<div class="product-all-wrapper"><span class="product-all-icon-box"><i class="fa fa-th"></i></span><span class="product-all-name">产品与服务</span><span class="aliyun-sidebar-toolbar"><i class="fa fa-chevron-right"></i></span></div>
+						</div>
+						<ul class="sidebar-products">
+							<li class="product-item"><span class="product-item-icon-box"><i class="fa fa-diamond"></i></span>
+								<a href="#" class="product-item-link" title="弹性伸缩"><span class="product-item-name">弹性伸缩</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 40px, 0px);"><span class="product-item-icon-box"><i class="fa fa-files-o"></i></span>
+								<a href="#" class="product-item-link" title="对象存储 OSS"><span class="product-item-name">对象存储 OSS</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 80px, 0px);"><span class="product-item-icon-box"><i class="fa fa-laptop"></i></span>
+								<a href="#" class="product-item-link" title="云服务器 ECS"><span class="product-item-name">云服务器 ECS</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item product-item-active" style="transform: translate3d(0px, 120px, 0px);"><span class="product-item-icon-box"><i class="fa fa-edit"></i></span>
+								<a href="#" class="product-item-link" title="云数据库 RDS 版"><span class="product-item-name">云数据库 RDS 版</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 160px, 0px);"><span class="product-item-icon-box"><i class="fa fa-table"></i></span>
+								<a href="#" class="product-item-link" title="专有网络 VPC"><span class="product-item-name">专有网络 VPC</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 200px, 0px);"><span class="product-item-icon-box"><i class="fa fa-calendar"></i></span>
+								<a href="#" class="product-item-link" title="CDN"><span class="product-item-name">CDN</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 240px, 0px);"><span class="product-item-icon-box"><i class="fa fa-book"></i></span>
+								<a href="#" class="product-item-link" title="负载均衡"><span class="product-item-name">负载均衡</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 280px, 0px);"><span class="product-item-icon-box"><i class="fa fa-pie-chart"></i></span>
+								<a href="#" class="product-item-link" title="域名"><span class="product-item-name">域名</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 320px, 0px);"><span class="product-item-icon-box"><i class="fa fa-bar-chart"></i></span>
+								<a href="#" class="product-item-link" title="云市场"><span class="product-item-name">云市场</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 360px, 0px);"><span class="product-item-icon-box"><i class="fa fa-calendar-check-o"></i></span>
+								<a href="#" class="product-item-link" title="数加控制台概览"><span class="product-item-name">数加控制台概览</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+							<li class="product-item" style="transform: translate3d(0px, 400px, 0px);"><span class="product-item-icon-box"><i class="fa fa-cubes"></i></span>
+								<a href="#" class="product-item-link" title="云盾控制台概览"><span class="product-item-name">云盾控制台概览</span></a><span class="aliyun-sidebar-toolbar"><span class="sidebar-icon-box"><i class="fa fa-close"></i></span><span class="sidebar-icon-box sidebar-icon-box-drag"><i class="fa fa-reorder"></i></span></span>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar-productList">
+						<div class="sidebar-productList-close"><i class="fa fa-close"></i></div>
+						<div class="sidebar-productList-left">
+							<!--<div class="product-search"><span class="sidebar-icon-search-wrapper"><i class="fa fa-search"></i></span><input type="text" class="product-search-input" placeholder="请输入关键词">
+							</div>-->
+							<div class="product-recent-visit">
+								<dl><dt><h3>最近访问</h3></dt>
+									<dd>
+										<a href="#">云服务器 ECS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></dd>
+									<dd>
+										<a href="#">云效</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></dd>
+								</dl>
+							</div>
+							<div class="product-category-list ">
+								<div class="product-category-list-wrapper">
+									<div class="sidebar-product-category">
+										<h3 id="all"></h3>
+										<div class="sidebar-product-category-group">
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-0">弹性计算</h5>
+												<ul>
+													<li>
+														<a href="#" title="云服务器 ECS">云服务器 ECS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="负载均衡">负载均衡</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="弹性伸缩">弹性伸缩</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="容器服务">容器服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="容器服务Kubernetes版">容器服务Kubernetes版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="容器镜像服务">容器镜像服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="资源编排">资源编排</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="批量计算">批量计算</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="函数计算">函数计算</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="弹性高性能计算">弹性高性能计算</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="轻量应用服务器">轻量应用服务器</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="图形工作站">图形工作站</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-3">网络</h5>
+												<ul>
+													<li class="ac">
+														<a href="#" title="专有网络 VPC">专有网络 VPC</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="负载均衡">负载均衡</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="NAT网关">NAT网关</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="共享流量包">共享流量包</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="弹性公网 IP">弹性公网 IP</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="高速通道">高速通道</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="VPN网关">VPN网关</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="共享带宽">共享带宽</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="CDN">CDN</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="全球加速">全球加速</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能接入网关">智能接入网关</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="IPv6转换服务">IPv6转换服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云企业网">云企业网</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-6">监控与管理</h5>
+												<ul>
+													<li>
+														<a href="#" title="云监控">云监控</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="访问控制">访问控制</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="操作审计">操作审计</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="密钥管理服务">密钥管理服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能顾问">智能顾问</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-9">移动服务</h5>
+												<ul>
+													<li>
+														<a href="#" title="移动数据分析">移动数据分析</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="移动推送">移动推送</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="HTTPDNS">HTTPDNS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="移动测试">移动测试</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="移动用户反馈">移动用户反馈</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="移动热修复">移动热修复</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="yundun">安全（云盾）</h5>
+												<ul>
+													<li>
+														<a href="#" title="云盾控制台概览">云盾控制台概览</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="DDoS基础防护">DDoS基础防护</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="DDoS高防">DDoS高防</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="游戏盾">游戏盾</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="Web应用防火墙（网络安全）">Web应用防火墙（网络安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="安骑士（服务器安全）">安骑士（服务器安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="SSL证书（应用安全）">SSL证书（应用安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据库审计（数据安全）">数据库审计（数据安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="加密服务（数据安全）">加密服务（数据安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="风险识别（业务安全）">风险识别（业务安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="内容安全（业务安全）">内容安全（业务安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="态势感知（大数据安全）">态势感知（大数据安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="堡垒机（安全管理）">堡垒机（安全管理）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="安全管家（安全服务）">安全管家（安全服务）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="先知（安全服务）">先知（安全服务）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云防火墙">云防火墙</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="实人认证">实人认证</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="网站威胁扫描（应用安全）">网站威胁扫描（应用安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据风控（业务安全）">数据风控（业务安全）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="爬虫风险管理">爬虫风险管理</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="sidebar-product-category-group">
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-1">数据库</h5>
+												<ul>
+													<li>
+														<a href="#" title="云数据库 RDS 版">云数据库 RDS 版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 MongoDB 版">云数据库 MongoDB 版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 Redis 版">云数据库 Redis 版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 Memcache 版">云数据库 Memcache 版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库HybridDB for MySQL">云数据库HybridDB for MySQL</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 HBase 版">云数据库 HBase 版</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库POLARDB">云数据库POLARDB</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="时间序列数据库 TSDB">时间序列数据库 TSDB</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 HybridDB for PostgreSQL">云数据库 HybridDB for PostgreSQL</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 OceanBase">云数据库 OceanBase</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="分析型数据库">分析型数据库</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据传输服务DTS">数据传输服务DTS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据管理 DMS">数据管理 DMS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据库备份 DBS">数据库备份 DBS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="混合云数据库管理 HDM">混合云数据库管理 HDM</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="分布式关系型数据库 DRDS">分布式关系型数据库 DRDS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-4">分析</h5>
+												<ul>
+													<li>
+														<a href="#" title="E-MapReduce">E-MapReduce</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云数据库 HybridDB for PostgreSQL">云数据库 HybridDB for PostgreSQL</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="大数据计算服务">大数据计算服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="分析型数据库">分析型数据库</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据集成（旧版）">数据集成（旧版）</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="开放搜索">开放搜索</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-7">应用服务</h5>
+												<ul>
+													<li>
+														<a href="#" title="日志服务">日志服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="开放搜索">开放搜索</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="性能测试服务">性能测试服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="邮件推送">邮件推送</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="API网关">API网关</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="物联网平台">物联网平台</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="消息服务">消息服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能对话分析服务">智能对话分析服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云效">云效</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云AP">云AP</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云桌面">云桌面</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="CodePipeline">CodePipeline</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云客服">云客服</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云小蜜">云小蜜</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云呼叫中心">云呼叫中心</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="Node.js 性能平台">Node.js 性能平台</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="API 控制台">API 控制台</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智联车管理云平台">智联车管理云平台</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="区块链服务">区块链服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-10">视频服务</h5>
+												<ul>
+													<li>
+														<a href="#" title="媒体处理">媒体处理</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="视频点播">视频点播</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="视频直播">视频直播</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="音视频通信 RTC">音视频通信 RTC</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="netcn">域名与网站（万网）</h5>
+												<ul>
+													<li>
+														<a href="#" title="域名">域名</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="云解析 DNS">云解析 DNS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云虚拟主机">云虚拟主机</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="企业邮箱">企业邮箱</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="标准建站">标准建站</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="弹性 Web 托管">弹性 Web 托管</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="sidebar-product-category-group">
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-2">存储与CDN</h5>
+												<ul>
+													<li>
+														<a href="#" title="对象存储 OSS">对象存储 OSS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="文件存储 NAS">文件存储 NAS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="表格存储">表格存储</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="归档存储">归档存储</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="CDN">CDN</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="PCDN">PCDN</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="全站加速">全站加速</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云存储网关">云存储网关</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能云相册">智能云相册</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="混合云备份">混合云备份</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="混合云容灾">混合云容灾</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="安全加速 SCDN">安全加速 SCDN</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能媒体管理">智能媒体管理</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="闪电立方">闪电立方</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="边缘节点服务ENS">边缘节点服务ENS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-5">云通信</h5>
+												<ul>
+													<li>
+														<a href="#" title="移动推送">移动推送</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="消息服务">消息服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="邮件推送">邮件推送</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="语音服务">语音服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="流量服务">流量服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="短信服务">短信服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="物联网无线连接服务">物联网无线连接服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="号码隐私保护">号码隐私保护</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="号码认证服务">号码认证服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云通信网络加速">云通信网络加速</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="category-8">互联网中间件</h5>
+												<ul>
+													<li>
+														<a href="#" title="企业级分布式应用服务 EDAS">企业级分布式应用服务 EDAS</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="消息队列 MQ">消息队列 MQ</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="云服务总线">云服务总线</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="业务实时监控服务">业务实时监控服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="全局事务服务">全局事务服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="应用配置管理">应用配置管理</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="消息队列 Kafka">消息队列 Kafka</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="dtplus">大数据（数加）</h5>
+												<ul>
+													<li>
+														<a href="#" title="数加控制台概览">数加控制台概览</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+													<li>
+														<a href="#" title="DataWorks">DataWorks</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="Quick BI">Quick BI</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="机器学习">机器学习</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="推荐引擎">推荐引擎</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="公众趋势分析">公众趋势分析</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="DataV数据可视化">DataV数据可视化</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="分析型数据库">分析型数据库</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="大数据计算服务">大数据计算服务</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="智能语音交互">智能语音交互</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="流计算">流计算</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="画像分析">画像分析</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="企业图谱">企业图谱</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="营销引擎">营销引擎</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="数据集成">数据集成</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="人脸识别">人脸识别</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="图像识别">图像识别</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="阿里云Elasticsearch">阿里云Elasticsearch</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="自然语言处理">自然语言处理</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="I+关系网络分析">I+关系网络分析</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+													<li>
+														<a href="#" title="图像搜索">图像搜索</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star-o"></i></span></li>
+												</ul>
+											</div>
+											<div class="sidebar-product-category-group-item">
+												<h5 id="market">云市场</h5>
+												<ul>
+													<li>
+														<a href="#" title="云市场">云市场</a><span class="sidebar-icon-star-wrapper"><i class="fa fa-star"></i></span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-productList-right">
+							<ul class="sidebar-category-nav">
+								<li class="sidebar-category-nav-item sidebar-category-nav-item-active">
+									<a href="#category-0">弹性计算</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-1">数据库</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-2">存储与CDN</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-3">网络</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-4">分析</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-5">云通信</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-6">监控与管理</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-7">应用服务</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-8">互联网中间件</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-8">移动服务</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#category-10">视频服务</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#dtplus">大数据（数加）</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#yundun">安全（云盾）</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#netcn">域名与网站（万网）</a>
+								</li>
+								<li class="sidebar-category-nav-item">
+									<a href="#market">云市场</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="viewFramework-body">
+			<div class="viewFramework-product">
+				<div class="viewFramework-product-body">
+					<div class="home-section-main clearfix">
+						<section class="content-header">
+							<h1> Dashboard <small>Version 2.0</small> </h1>
+							<ol class="breadcrumb">
+								<li>
+									<a href="#"><i class="fa fa-dashboard"></i> Home</a>
+								</li>
+								<li class="active">Dashboard</li>
+							</ol>
+						</section>
+						<section class="content">
+							<div class="box">
+								<div class="box-header with-border">
+									<i class="fa fa-calendar"></i>
+									<h3 class="box-title">年计划编制</h3>
+									<div class="box-tools">
+										<input type="text" id="fullname" name="fullname" class="k-textbox" placeholder="Full name" required validationMessage="Enter {0}" style="width: 220px;" />
+										<input id="value" value="10/10/2000" style="float:none" />
+										<button type="submit" class="k-button k-primary k-button-icontext "><span class="k-icon k-i-zoom"></span>查询</button>
+										<span class="line"></span>
+										<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-aggregate-fields"></span>复制上一年计划</button>
+										<span class="line"></span>
+										<div class="k-button-group">
+											<button type="submit" class="k-button k-button-icontext " data-toggle="modal" data-target="#myModal"><span class="k-icon k-i-plus"></span>新增</button>
+											<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-delete"></span>删除</button>
+											<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-floppy"></span>保存</button>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+											</div>
+											<form class="form-horizontal">
+												<div class="modal-body">
+													<div class="form-group">
+														<label for="inputEmail3" class="col-sm-3 control-label">计划项编码</label>
+
+														<div class="col-sm-9">
+															<div class="k-multiselect-wrap k-floatwrap" unselectable="on">
+																<ul role="listbox" unselectable="on" class="k-reset" id="required_taglist">
+																	<li class="k-button" unselectable="on"><span unselectable="on">Anne King</span><span unselectable="on" aria-label="delete" class="k-select"><span class="k-icon k-i-close"></span></span>
+																	</li>
+																	<li class="k-button" unselectable="on"><span unselectable="on">Andrew Fuller</span><span unselectable="on" aria-label="delete" class="k-select"><span class="k-icon k-i-close"></span></span>
+																	</li>
+																</ul><input class="k-input" style="width: 25px;" accesskey="" autocomplete="off" role="listbox" title="" aria-expanded="false" tabindex="0" aria-describedby="required_taglist" aria-owns="required_taglist required_listbox" aria-labelledby="required_label" aria-disabled="false" aria-busy="false"><span unselectable="on" class="k-icon k-clear-value k-i-close" title="clear" role="button" tabindex="-1"></span><span class="k-icon k-i-loading k-hidden"></span></div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">计划项名称</label>
+
+														<div class="col-sm-9">
+															<input id="currency" type="number" title="currency" value="30" min="0" max="100" style="width: 220px;" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">计划类型</label>
+
+														<div class="col-sm-9">
+															<select name="time" id="time" required data-required-msg="Select start time" style="width: 220px;">
+																<option>14:00</option>
+																<option>15:30</option>
+																<option>17:00</option>
+																<option>20:15</option>
+															</select>
+															<span class="k-invalid-msg" data-for="time"></span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">物料名称</label>
+
+														<div class="col-sm-9">
+															<input id="amount" name="Amount" type="text" min="1" max="10" value="1" required data-max-msg="Enter value between 1 and 10" style="width: 220px;" />
+															<span class="k-invalid-msg" data-for="Amount"></span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">邮箱</label>
+
+														<div class="col-sm-9">
+															<input type="email" id="email" name="Email" class="k-textbox" placeholder="e.g. myname@example.net" required data-email-msg="Email format is not valid" style="width: 220px;" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">联系方式</label>
+
+														<div class="col-sm-9">
+															<input type="tel" id="tel" name="tel" class="k-textbox" pattern="\d{10}" placeholder="Enter a ten digit number" required validationMessage="Enter at least ten digits" style="width: 220px;" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">显示次序</label>
+
+														<div class="col-sm-9">
+															<input type="search" id="search" name="search" required validationMessage="Select movie" style="width: 220px;" /><span class="k-invalid-msg" data-for="search"></span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword3" class="col-sm-3 control-label">是否年计划</label>
+
+														<div class="col-sm-9">
+															<input type="text" id="fullname" name="fullname" class="k-textbox" placeholder="Full name" required validationMessage="Enter {0}" style="width: 220px;" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-offset-3 col-sm-9">
+															<div class="checkbox">
+																<label> <input type="checkbox"> Remember me </label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.box-body -->
+												<div class="modal-footer">
+													<button type="submit" class="k-button" data-dismiss="modal">Cancel</button>
+													<button type="submit" class="k-button k-primary">Submit</button>
+												</div>
+												<!-- /.box-footer -->
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="box-body">
+									<div id="grid"></div>
+								</div>
+								<!-- /.box -->
+							</div>
+							<div class="box box-success">
+								<div class="box-header with-border">
+									<i class="fa fa-shopping-bag"></i>
+									<h3 class="box-title">包装规格配置</h3>
+									<div class="box-tools">
+										<input type="text" class="k-text-primary k-textbox" />
+
+										<button type="submit" class="k-button k-primary k-button-icontext "><span class="k-icon k-i-zoom"></span>查询</button>
+										<span class="line"></span>
+										<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-aggregate-fields"></span>复制上一年计划</button>
+										<span class="line"></span>
+										<div class="k-button-group">
+											<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-delete"></span>删除</button>
+											<button type="submit" class="k-button k-button-icontext "><span class="k-icon k-i-floppy"></span>保存</button>
+										</div>
+									</div>
+								</div>
+								<div class="box-body">
+									<div id="rowSelection"></div>
+								</div>
+							</div>
+							<div class="nav-tabs-custom">
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a>
+									</li>
+									<li class="">
+										<a href="#timeline" data-toggle="tab" aria-expanded="false">Timeline</a>
+									</li>
+									<li class="">
+										<a href="#settings" data-toggle="tab" aria-expanded="false">Settings</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="activity">
+										<div id="rowSelection1"></div>
+									</div>
+									<div class="tab-pane" id="timeline">
+									</div>
+									<div class="tab-pane" id="settings">
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="box-header">
+									<i class="fa fa-table"></i>
+									<h3 class="box-title">Tables</h3>
+								</div>
+								<div class="box-body">
+									<style type="text/css">
+										.colorBox {
+											overflow: hidden;
+											margin: 0;
+											padding: 0;
+											margin-bottom: 20px;
+										}
+										
+										.colorBox li {
+											height: 30px;
+											width: 90px;
+											color: #fff;
+											display: inline-block;
+											float: left;
+											margin-right: 10px;
+											text-align: center;
+											line-height: 30px;
+										}
+									</style>
+									<ul class="colorBox">
+										<li class="progress-bar-primary">#3c8dbc</li>
+										<li class="progress-bar-success">#00a65a</li>
+										<li class="progress-bar-info">#00c0ef</li>
+										<li class="progress-bar-warning">#f39c12</li>
+										<li class="progress-bar-danger">#dd4b39</li>
+									</ul>
+									<div class="demo-section k-content wide">
+										<div id="chart"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function productItemLi() {
+				var userList = $('.sidebar-products li');
+				var n = 0;
+				$.each(userList, function(i, item) {
+					$(this).css("transform", "translate3d(0px, " + n + "px, 0px)");
+					n = n + 40;
+				});
+			}
+			$(function() {
+				var data = [
+					"12 Angry Men",
+					"Il buono, il brutto, il cattivo.",
+					"Inception",
+					"One Flew Over the Cuckoo's Nest",
+					"Pulp Fiction",
+					"Schindler's List",
+					"The Dark Knight",
+					"The Godfather",
+					"The Godfather: Part II",
+					"The Shawshank Redemption"
+				];
+				$('[data-toggle="tooltip"]').tooltip();
+				$("#value").kendoDatePicker();
+				$("#currency").kendoNumericTextBox({
+					format: "c",
+					decimals: 3
+				});
+				$("#search").kendoAutoComplete({
+					dataSource: data,
+					separator: ", "
+				});
+
+				$("#time").kendoDropDownList({
+					optionLabel: "--Start time--"
+				});
+
+				$("#amount").kendoNumericTextBox();
+
+				$("#date").kendoDateInput();
+			})
+			$(document).ready(function() {
+				$(document).on("click", ".sidebar-icon-star-wrapper .fa-star-o", function() {
+					the_text = $(this).parent().parent().find("a").text();
+					$('.sidebar-products').prepend("<li class='product-item'><span class='product-item-icon-box'><i class='fa fa-diamond'></i></span> <a href='#' class='product-item-link' title='" + the_text + "'><span class='product-item-name'>" + the_text + "</span></a><span class='aliyun-sidebar-toolbar'><span class='sidebar-icon-box'><i class='fa fa-close'></i></span><span class='sidebar-icon-box sidebar-icon-box-drag'><i class='fa fa-reorder'></i></span></span> </li> ");
+					$(this).removeClass("fa-star-o").addClass("fa-star");
+					productItemLi();
+				});
+				$(document).on("click", ".aliyun-sidebar-toolbar .sidebar-icon-box .fa-close", function() {
+					$(this).parent().parent().parent().remove();
+					productItemLi();
+				});
+				$('.sidebar-category-nav li a').click(function(event) {
+					$(this).parent().parent().find("li").removeClass("sidebar-category-nav-item-active");
+					$(this).parent().addClass("sidebar-category-nav-item-active");
+					event.preventDefault();
+					var link = this;
+					$.smoothScroll({
+						scrollElement: $('div.sidebar-productList-left'),
+						scrollTarget: link.hash
+					});
+				});
+				$(".product-all,.sidebar-productList-close").on("click", function() {
+					$(".sidebar-mini").toggleClass("showProductList");
+				});
+
+			});
+		</script>
+		<script>
+        function createChart() {
+            $("#chart").kendoChart({
+                title: {
+                    position: "bottom",
+                    text: "Share of Internet Population Growth"
+                },
+                legend: {
+                    visible: false
+                },
+                chartArea: {
+                    background: ""
+                },
+                seriesDefaults: {
+                    type: "donut",
+                    startAngle: 150
+                },
+                series: [{
+                    name: "2011",
+                    data: [{
+                        category: "Asia",
+                        value: 30.8,
+                        color: "#9de219"
+                    },{
+                        category: "Europe",
+                        value: 21.1,
+                        color: "#90cc38"
+                    },{
+                        category: "Latin America",
+                        value: 16.3,
+                        color: "#068c35"
+                    },{
+                        category: "Africa",
+                        value: 17.6,
+                        color: "#006634"
+                    },{
+                        category: "Middle East",
+                        value: 9.2,
+                        color: "#004d38"
+                    },{
+                        category: "North America",
+                        value: 4.6,
+                        color: "#033939"
+                    }]
+                }, {
+                    name: "2012",
+                    data: [{
+                        category: "Asia",
+                        value: 53.8,
+                        color: "#9de219"
+                    },{
+                        category: "Europe",
+                        value: 16.1,
+                        color: "#90cc38"
+                    },{
+                        category: "Latin America",
+                        value: 11.3,
+                        color: "#068c35"
+                    },{
+                        category: "Africa",
+                        value: 9.6,
+                        color: "#006634"
+                    },{
+                        category: "Middle East",
+                        value: 5.2,
+                        color: "#004d38"
+                    },{
+                        category: "North America",
+                        value: 3.6,
+                        color: "#033939"
+                    }],
+                    labels: {
+                        visible: true,
+                        background: "transparent",
+                        position: "outsideEnd",
+                        template: "#= category #: \n #= value#%"
+                    }
+                }],
+                tooltip: {
+                    visible: true,
+                    template: "#= category # (#= series.name #): #= value #%"
+                }
+            });
+        }
+
+        $(document).ready(createChart);
+        $(document).bind("kendo:skinChange", createChart);
+    </script>
+		
+		<script>
+			$(document).ready(function() {
+				$("#grid").kendoGrid({
+					dataSource: {
+						type: "odata",
+						transport: {
+							read: "http://demos.kendoui.com/service/Northwind.svc/Orders"
+						},
+						schema: {
+							model: {
+								fields: {
+									OrderID: {
+										type: "number"
+									},
+									ShipCountry: {
+										type: "string"
+									},
+									ShipName: {
+										type: "string"
+									},
+									ShipAddress: {
+										type: "string"
+									}
+								}
+							}
+						},
+						pageSize: 30,
+						serverPaging: true,
+						serverFiltering: true,
+						serverSorting: true
+					},
+					height: 430,
+					sortable: true,
+					filterable: true,
+					columnMenu: true,
+					pageable: true,
+					columns: [{
+						field: "OrderID",
+						title: "Order ID",
+						width: 100
+					}, {
+						field: "ShipCountry",
+						title: "Ship Country",
+						width: 130
+					}, {
+						field: "ShipName",
+						title: "Ship Name",
+						width: 200
+					}, {
+						field: "ShipAddress",
+						filterable: false
+					}]
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#rowSelection,#rowSelection1").kendoGrid({
+					dataSource: {
+						data: orders,
+						pageSize: 5
+					},
+					selectable: "multiple",
+					pageable: {
+						buttonCount: 5
+					},
+					scrollable: false,
+					navigatable: true,
+					columns: [{
+							field: "ShipCountry",
+							title: "Ship Country",
+							width: 200
+						},
+						{
+							field: "Freight",
+							width: 200
+						},
+						{
+							field: "OrderDate",
+							title: "Order Date",
+							format: "{0:dd/MM/yyyy}"
+						}
+					]
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

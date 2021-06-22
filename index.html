@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Column menu</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+		<link href="css/kendo.common.min.css" rel="stylesheet">
+		<!--<link href="css/kendo.rtl.min.css" rel="stylesheet">-->
+		<link href="css/kendo.metro.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/_all-skins.min.css" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="css/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/kendo.web.min.js"></script>
+		<script src="js/app.min.js"></script>
+		<script src="js/orders.js"></script>
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper" style="height: auto;">
+			<header class="main-header">
+				<!-- Logo -->
+				<a href="index2.html" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>MYAD</b></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><b>MY</b>Admin Login</span>
+				</a>
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- Messages: style can be found in dropdown.less-->
+							<li class="dropdown messages-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-envelope-o"></i>
+									<span class="label label-success">4</span>
+								</a>
+
+							</li>
+							<!-- Notifications: style can be found in dropdown.less -->
+							<li class="dropdown notifications-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-bell-o"></i>
+									<span class="label label-warning">10</span>
+								</a>
+
+							</li>
+							<!-- Tasks: style can be found in dropdown.less -->
+							<li class="dropdown tasks-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<i class="fa fa-flag-o"></i>
+									<span class="label label-danger">9</span>
+								</a>
+
+							</li>
+							<!-- User Account: style can be found in dropdown.less -->
+							<li class="dropdown user user-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
+									<span class="hidden-xs">Alexander Pierce</span>
+								</a>
+
+							</li>
+							<!-- Control Sidebar Toggle Button -->
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<aside class="main-sidebar">
+				<section class="sidebar">
+					<ul class="sidebar-menu">
+						<li class="header"></li>
+						<li class="active treeview">
+							<a href="#">
+								<i class="fa fa-dashboard"></i> <span>Dashboard</span>
+								<span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a>
+								</li>
+								<li class="active">
+									<a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-files-o"></i>
+								<span>Layout Options</span>
+								<span class="pull-right-container"> <span class="label label-primary pull-right">4</span> </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a>
+								</li>
+								<li>
+									<a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a>
+								</li>
+								<li>
+									<a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a>
+								</li>
+								<li>
+									<a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/widgets.html">
+								<i class="fa fa-th"></i> <span>Widgets</span>
+								<span class="pull-right-container"> <small class="label pull-right bg-green">new</small> </span>
+							</a>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-pie-chart"></i>
+								<span>Charts</span>
+								<span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a>
+								</li>
+								<li>
+									<a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a>
+								</li>
+								<li>
+									<a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a>
+								</li>
+								<li>
+									<a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-laptop"></i>
+								<span>UI Elements</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a>
+								</li>
+								<li>
+									<a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a>
+								</li>
+								<li>
+									<a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a>
+								</li>
+								<li>
+									<a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a>
+								</li>
+								<li>
+									<a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a>
+								</li>
+								<li>
+									<a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-edit"></i> <span>Forms</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a>
+								</li>
+								<li>
+									<a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a>
+								</li>
+								<li>
+									<a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-table"></i> <span>Tables</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a>
+								</li>
+								<li>
+									<a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/calendar.html">
+								<i class="fa fa-calendar"></i> <span>Calendar</span>
+								<span class="pull-right-container">
+              <small class="label pull-right bg-red">3</small>
+              <small class="label pull-right bg-blue">17</small>
+            </span>
+							</a>
+						</li>
+						<li>
+							<a href="pages/mailbox/mailbox.html">
+								<i class="fa fa-envelope"></i> <span>Mailbox</span>
+								<span class="pull-right-container">
+              <small class="label pull-right bg-yellow">12</small>
+              <small class="label pull-right bg-green">16</small>
+              <small class="label pull-right bg-red">5</small>
+            </span>
+							</a>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-folder"></i> <span>Examples</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a>
+								</li>
+								<li>
+									<a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a>
+								</li>
+								<li>
+									<a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a>
+								</li>
+								<li>
+									<a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a>
+								</li>
+								<li>
+									<a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a>
+								</li>
+								<li>
+									<a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a>
+								</li>
+								<li>
+									<a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a>
+								</li>
+								<li>
+									<a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a>
+								</li>
+								<li>
+									<a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-share"></i> <span>Multilevel</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i> Level One
+										<span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+									</a>
+									<ul class="treeview-menu">
+										<li>
+											<a href="#"><i class="fa fa-circle-o"></i> Level Two</a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-circle-o"></i> Level Two
+												<span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+											</a>
+											<ul class="treeview-menu">
+												<li>
+													<a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a>
+						</li>
+						<li class="header">LABELS</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			<div class="content-wrapper" style="min-height: 901px;">
+				<section class="content-header">
+					<h1> Dashboard <small>Version 2.0</small> </h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-dashboard"></i> Home</a>
+						</li>
+						<li class="active">Dashboard</li>
+					</ol>
+				</section>
+				<section class="content">
+					<div class="box">
+						<div class="box-header with-border">
+							<i class="fa fa-times-circle-o"></i>
+
+							<h3 class="box-title">年计划编制</h3>
+						</div>
+						<div class="box-body k-form">
+							<div class="row">
+								<div class="col-md-6">
+									<form class="">
+										<fieldset> <label class="k-form-field">                    <span>Username</span>                    <input class="k-textbox" placeholder="Your username">                </label> <label class="k-form-field">                    <span>Email <span class="k-required">*</span></span>                    <input type="email" class="k-textbox" placeholder="myname@example.com">                </label>
+											<div class="k-form-field"> <input type="radio" name="gender" id="female" class="k-radio"> <label class="k-radio-label" for="female">Female</label> <input type="radio" name="gender" id="male" class="k-radio" checked="checked"> <label class="k-radio-label" for="male">Male</label> </div> <label class="k-form-field">                    <span>Password</span>                    <input type="password" class="k-textbox" placeholder="Your password">                </label> <label class="k-form-field">                    <input type="checkbox" id="auth-2fa" class="k-checkbox" checked="checked">                    <label class="k-checkbox-label" for="auth-2fa">Remember me on this device</label> </label>
+										</fieldset>
+									</form>
+									<button type="button" class="k-button margin-r-5 btn-primary">Primary</button>
+									<button type="button" class="k-button margin-r-5 btn-success">Success</button>
+									<button type="button" class="k-button margin-r-5 btn-info">Info</button>
+									<button type="button" class="k-button margin-r-5 btn-danger">Danger</button>
+									<button type="button" class="k-button margin-r-5 btn-warning">Warning</button>
+								</div>
+								<div class="col-md-6">
+									<form role="form">
+										<!-- input states -->
+										<div class="form-group has-success">
+											<label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>
+											<input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+											<span class="help-block">Help block with success</span>
+										</div>
+										<div class="form-group has-warning">
+											<label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Input with
+                    warning</label>
+											<input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+											<span class="help-block">Help block with warning</span>
+										</div>
+										<div class="form-group has-error">
+											<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Input with
+                    error</label>
+											<input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+											<span class="help-block">Help block with error</span>
+										</div>
+
+										<!-- checkbox -->
+										<div class="form-group">
+											<div class="checkbox">
+												<label>
+                      <input type="checkbox">
+                      Checkbox 1
+                    </label>
+											</div>
+
+											<div class="checkbox">
+												<label>
+                      <input type="checkbox">
+                      Checkbox 2
+                    </label>
+											</div>
+
+											<div class="checkbox">
+												<label>
+                      <input type="checkbox" disabled="">
+                      Checkbox disabled
+                    </label>
+											</div>
+										</div>
+
+									</form>
+									<div class="form-group">
+										<div class="radio">
+											<label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Option one is this and that—be sure to include why it's great
+                    </label>
+										</div>
+										<div class="radio">
+											<label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Option two can be something else and selecting it will deselect option one
+                    </label>
+										</div>
+										<div class="radio">
+											<label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                      Option three is disabled
+                    </label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /.box -->
+					</div>
+					<div class="nav-tabs-custom">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a>
+							</li>
+							<li class="">
+								<a href="#timeline" data-toggle="tab" aria-expanded="false">Timeline</a>
+							</li>
+							<li class="">
+								<a href="#settings" data-toggle="tab" aria-expanded="false">Settings</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="activity">
+								<div id="rowSelection1"></div>
+							</div>
+							<div class="tab-pane" id="timeline">
+							</div>
+							<div class="tab-pane" id="settings">
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-header with-border">
+							<i class="fa fa-calendar"></i>
+							<h3 class="box-title">Tiems</h3>
+						</div>
+						<div class="box-body k-form">
+							<div class="form-group">
+								<label for="startDate" class="control-label">Discount start date:</label>
+								<input id="startDate" />
+								<input id="startTime" value="12:00 AM" />
+							</div>
+							<div class="form-group">
+								<label for="endDate" class="control-label">Discount end date:</label>
+								<input id="endDate" />
+								<input id="endTime" value="12:00 AM" />
+							</div>
+							<div class="form-group">
+								<label for="initial" class="control-label">Initial price:</label>
+								<input id="initial" value="10" min="1" />
+							</div>
+							<div class="form-group">
+								<label for="discount" class="control-label">Discount:</label>
+								<input id="discount" value="0.05" min="0" max="0.5" step="0.01" />
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-header">
+							<i class="fa fa-table"></i>
+							<h3 class="box-title">Tables</h3>
+						</div>
+						<div class="box-body table-responsive no-padding">
+							<div id="rowSelection"></div>
+						</div>
+					</div>
+					<div id="grid" class="box box-primary"></div>
+				</section>
+			</div>
+			<footer class="main-footer">
+				<div class="pull-right hidden-xs">
+					<b>Version</b> 2.3.8
+				</div>
+				<strong>Copyright © 2018 <a href="#">Company Name</a>.</strong> All rights reserved.
+			</footer>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$("#rowSelection,#rowSelection1").kendoGrid({
+					dataSource: {
+						data: orders,
+						pageSize: 5
+					},
+					selectable: "multiple",
+					pageable: {
+						buttonCount: 5
+					},
+					scrollable: false,
+					navigatable: true,
+					columns: [{
+							field: "ShipCountry",
+							title: "Ship Country",
+							width: 200
+						},
+						{
+							field: "Freight",
+							width: 200
+						},
+						{
+							field: "OrderDate",
+							title: "Order Date",
+							format: "{0:dd/MM/yyyy}"
+						}
+					]
+				});
+
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				function startDateChange() {
+					var date = startDate.value();
+
+					if(date) {
+						date = new Date(date);
+						date.setDate(date.getDate() + 1);
+						endDate.min(date);
+					}
+				}
+
+				function endDateChange() {
+					var date = endDate.value();
+
+					if(date) {
+						date = new Date(date);
+						date.setDate(date.getDate() - 1);
+						startDate.max(date);
+					}
+				}
+
+				function changeCulture() {
+					kendo.culture(this.value());
+
+					var datePickerOptions = {
+						format: kendo.culture().calendar.patterns.d
+					};
+
+					var timePickerOptions = {
+						format: kendo.culture().calendar.patterns.t
+					};
+
+					startDate.setOptions(datePickerOptions);
+					endDate.setOptions(datePickerOptions);
+
+					startTime.setOptions(timePickerOptions);
+					endTime.setOptions(timePickerOptions);
+
+					initial.value(initial.value());
+					discount.value(discount.value());
+				}
+
+				var startDate = new kendo.ui.DatePicker($("#startDate"), {
+					change: startDateChange
+				});
+				var endDate = new kendo.ui.DatePicker($("#endDate"), {
+					change: endDateChange
+				});
+
+				var startTime = new kendo.ui.TimePicker($("#startTime"));
+				var endTime = new kendo.ui.TimePicker($("#endTime"));
+
+				var initial = new kendo.ui.NumericTextBox($("#initial"), {
+					format: "c"
+				});
+				var discount = new kendo.ui.NumericTextBox($("#discount"), {
+					format: "p"
+				});
+
+				var today = new Date();
+
+				startDate.value(today);
+				endDate.min(today);
+
+				today = new Date(today);
+				today.setDate(today.getDate() + 1);
+
+				endDate.value(today);
+				startDate.max(today);
+
+				$("#culture").kendoDropDownList({
+					change: changeCulture,
+					dataTextField: "text",
+					dataValueField: "value",
+					dataSource: [{
+							text: "bg-BG"
+						},
+						{
+							text: "de-DE"
+						},
+						{
+							text: "en-US"
+						},
+						{
+							text: "en-GB"
+						}
+					]
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#grid").kendoGrid({
+					dataSource: {
+						type: "odata",
+						transport: {
+							read: "http://demos.kendoui.com/service/Northwind.svc/Orders"
+						},
+						schema: {
+							model: {
+								fields: {
+									OrderID: {
+										type: "number"
+									},
+									ShipCountry: {
+										type: "string"
+									},
+									ShipName: {
+										type: "string"
+									},
+									ShipAddress: {
+										type: "string"
+									}
+								}
+							}
+						},
+						pageSize: 30,
+						serverPaging: true,
+						serverFiltering: true,
+						serverSorting: true
+					},
+					height: 430,
+					sortable: true,
+					filterable: true,
+					columnMenu: true,
+					pageable: true,
+					columns: [{
+						field: "OrderID",
+						title: "Order ID",
+						width: 100
+					}, {
+						field: "ShipCountry",
+						title: "Ship Country",
+						width: 130
+					}, {
+						field: "ShipName",
+						title: "Ship Name",
+						width: 200
+					}, {
+						field: "ShipAddress",
+						filterable: false
+					}]
+				});
+			});
+		</script>
+	</body>
+
+</html>
